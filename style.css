@@ -1,0 +1,330 @@
+body{
+    box-sizing: border-box;
+    max-width: 1442px;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 245);
+}
+*{
+   --primary-color: rgb(18, 31, 44);
+   --secondary-color: rgb(77, 77, 77);
+   --third-color: rgb(211, 211, 211);
+}
+a, button, img{
+    cursor: pointer;
+}
+.header{
+    height: 30px;
+    background-color: var(--primary-color);
+    padding: 5px 5px;
+    text-align: center;
+    align-items: center;
+}
+.header h3{
+    color: var(--third-color);
+    margin: 5px 5px;
+}
+.main-contain{
+    display: flex;
+}
+/* --------------- side bar -------------------- */
+.main-contain .sidebar{
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    background-color: var(--third-color);
+}
+.side-card{
+    background-color: var(--third-color);
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+.side-card:first-child{
+    margin-top: 20px;
+}
+.side-card img{
+    width: 70%;
+    height: 30px;
+    border-radius: 50%;
+}
+.side-card p{
+    margin-top: -5px;
+    margin-bottom: -2px;
+}
+/* --------------- main side -------------------- */
+.main-contain .main-side{
+    position: relative;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 25px;
+}
+.hero-section{
+    width: 100%;
+    margin-left: 25px;
+}
+.hero-section .image{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+.hero-section .image img{
+    position: absolute;
+    width: 95%;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 10px;
+    object-fit:fill;
+}
+.hero-section .hero-content{
+    position: relative;
+    width: 30%;
+    height: 300px;
+    text-align: center;
+    margin-top: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0.6;
+}
+.hero-section .hero-content div{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 150px;
+    color: white;
+    font-weight: bold;
+}
+.product-section{
+    width: 100%;
+}
+.product-section .category{
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+}
+.product-section .category .heading{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.product-section .category .heading img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.product-section .category .category-item{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+.product-section .category .category-item .category-card{
+    padding: 0 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+}
+.product-section .category .category-item .category-card:hover{
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+}
+.product-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    margin-left: 20px;
+}
+.product-list .product-card{
+    background-color: var(--third-color);
+    width: 220px;
+}
+.product-list .product-card .product-card-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-list .product-card .product-card-item img{
+    width: 100%;
+    height: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.product-card-content{
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+}
+.product-card-content .content{
+    width: 70%;
+    font-size: 13px;
+    margin-top: -10px;
+}
+.product-card-content .price{
+    font-size: 15px;
+    color: rgb(255, 115, 0);
+}
+.product-card-content .content p{
+    margin-top: -10px;
+}
+.product-card-item button{
+    width: 90%;
+    background-color: var(--third-color);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 0;
+    border: none;
+}
+.product-card-item button:hover{
+    background-color: var(--secondary-color);
+}
+/* --------------- list side -------------------- */
+.main-contain .list-side{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: var(--third-color)
+}
+.list-side .list-side-header{
+    width: calc(100% - 5px);
+    display: flex;
+    gap: 10px;
+    margin-left: 5px;
+    align-items: center;
+    background-color: none;
+}
+.list-side .list-side-header img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+.list-side .customer-address{
+    width: calc(100% - 5px);
+    margin-left: 5px;
+}
+.list-side .customer-address p,
+.list-side .customer-address h3{
+    margin: 0;
+}
+.list-side .customer-address h3{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.list-side .card-list{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.list-side .card-list::-webkit-scrollbar{
+    width: 5px;
+}
+.list-side .card-list::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #0c335a;
+}
+.list-side .card-list .card{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    margin-top: 3px;
+    padding: 5px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+.list-side .card-list .card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.list-side .card-list .card div .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+.list-side .card-list .card div .content p{
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.list-side .card-list .card div .content h3{
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+.list-side .card-list .card div .buttons{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.list-side .card-list .card div .buttons .del-btn img{
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: none;
+}
+.list-side .card-list .card div .buttons input,
+.list-side .card-list .card div .buttons select {
+    margin:10px 0;
+    width: 50px;
+    height: 20px;
+    border: none;
+    outline: none;
+    padding: 0px 7px;
+    border-radius: 6px;
+    color: #000000;
+    font-size: 13px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+.list-side .card-list .card div .buttons .update-btn{
+   text-decoration: none;
+   padding: 5px 10px;
+   background-color: var(--secondary-color);
+   color: white;
+   border-radius: 10px;
+   font-size: 13px;
+}
+.total{
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+}
+.total .total-card{
+    width: calc(100% - 20px);
+    display: flex;
+    gap: 10px;
+    margin: 0 10px;
+    align-items: center;
+}
+.total .total-card p{
+    width: 50%;
+    font-size: 13px;
+}
+.total .total-card h3{
+    width: 50%;
+    font-size: 15px;
+    text-align: right;
+}
+.book-btn{
+    width: 90%;
+    padding: 10px 10px;
+    background-color: rgb(255, 119, 0);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
